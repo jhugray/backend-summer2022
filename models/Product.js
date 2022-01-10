@@ -25,6 +25,7 @@ Product.init(
     },
     price: {
       type: DataTypes.DECIMAL,
+      //can't be NULL, and allows validation to be added
       allowNull: false,
       validate: {
         //validates to ensure price length is at least 1 character and that the price datatype is a decimal
