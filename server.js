@@ -5,12 +5,12 @@ const routes = require('./routes');
 // import sequelize connection
 const sequelize = require('./config/connection');
 
-//server at PORT 3001 (or any port #) using express. 
-//Credentials hidden in a .env file that does not get pushed to github as it is in the .gitignore file
+//express server at PORT 3001 (or any port #) 
+//credentials hidden in a .env file that does not get pushed to github as it is in the .gitignore file
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-//Express middleware to parse the Request Object
+//express middleware to parse the Request Object
 //parses JSON object
 app.use(express.json());
 //parses strings or arrays

@@ -1,0 +1,5 @@
+-- DROP DATABASE
+DROP DATABASE IF EXISTS store_backend_db;
+
+-- CREATE DATABASE
+CREATE DATABASE  store_backend_db;
