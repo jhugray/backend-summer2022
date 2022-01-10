@@ -1,0 +1,27 @@
+{
+  "name": "backend-summer2022",
+  "version": "1.0.0",
+  "description": "Shopify's intern program back end challenge",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.22.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhugray/backend-summer2022.git"
+  },
+  "author": "Jess Hause Ugray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhugray/backend-summer2022/issues"
+  },
+  "homepage": "https://github.com/jhugray/backend-summer2022#readme"
+}
