@@ -1,5 +1,3 @@
--- DROP DATABASE
-DROP DATABASE IF EXISTS ecommerce_db;
+const Product = require('./Product');
 
--- CREATE DATABASE
-CREATE DATABASE ecommerce_db;
+module.exports = { Product };
