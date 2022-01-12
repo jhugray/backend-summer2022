@@ -1,10 +1,17 @@
 const router = require('express').Router();
-const { Product } = require('../../models');
+const { Product, Category } = require('../../models');
 
-// GET /api/products
+// GET /api/products endpoint
 router.get('/', (req, res) => {
   //runs the findAll method on the Product model
-  Product.findAll()
+  Product.findAll({
+    //include product's associated cateogry
+    include: [
+      {
+        model: Category
+      }
+    ]
+  })
   //returns data in JSON format
   .then(dbProductData => res.json(dbProductData))
   //error handling
@@ -17,7 +24,16 @@ router.get('/', (req, res) => {
 
 // GET /api/products/1 (1 = example id#)
 router.get('/:id', (req, res) => {
-  Product.findOne()
+  Product.findOne({
+    where: {
+      id: req.params.id
+    },
+    include: [  //associated Category
+      {
+        model: Category
+      }
+    ]
+  })
   .then(dbProductData => {
     //if no product with that id, error message returned
     if (!dbProductData) {

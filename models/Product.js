@@ -43,7 +43,15 @@ Product.init(
         len: [1],
         isNumeric: true
       }
-    }
+    },
+    category_id: {
+      type: DataTypes.INTEGER,
+      //foreign key to reference category
+      references: {
+        model: 'category',
+        key: 'id'
+      }
+    },
   },
   {
     sequelize,
