@@ -13,8 +13,9 @@ async function exportProductData (event) {
 
   
       // TO DO: Add HEADER, parse category object
-      let csvContent = "data:text/csv;charset=utf-8,";
+      let csvContent = "data:text/csv;charset=utf-8,Product ID,Product Name,Price,Stock,Category ID\n";
       let csvData = data.map(obj => Object.values(obj));
+
 
       csvData.forEach(function(rowArray) {
           let row = rowArray.join(",");
@@ -22,8 +23,8 @@ async function exportProductData (event) {
       });
 
       console.log(csvContent);
-      // var encodedUri = encodeURI(csvContent);
-      // window.open(encodedUri);
+      var encodedUri = encodeURI(csvContent);
+      window.open(encodedUri);
 
 
       })
