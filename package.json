@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Shopify's intern program back end challenge",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fast-csv": "^4.3.6",
+    "node-fetch": "^3.1.0"
+  },
   "devDependencies": {
     "dotenv": "^8.6.0",
     "express": "^4.17.2",
