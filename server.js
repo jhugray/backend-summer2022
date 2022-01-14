@@ -9,7 +9,7 @@ const path = require('path');
 //express server at PORT 3001 (or any port #) 
 //credentials hidden in a .env file that does not get pushed to github as it is in the .gitignore file
 const app = express();
-const PORT = process.env.PORT || 3009;
+const PORT = process.env.PORT || 3001;
 
 //express middleware to parse the Request Object
 //parses JSON object
