@@ -14,34 +14,25 @@ async function exportProductData (event) {
       response.json().then(function (data) {
         console.log(data);
 
-  
-      // TO DO: Parse category object
-      //set up the csv file format & headers
-      let csvContent = "data:text/csv;charset=utf-8,Product ID,Product Name,Price,Stock,Category ID,Category Name\n";
-      //parse data into an array, add it to the csvContent in the correct format
-      let csvData = data.map(obj => Object.values(obj));
-        console.log(csvData)
-      csvData.forEach(function(rowArray) {
-          console.log(rowArray);
+        //set up the csv file format & headers
+        let csvContent = "data:text/csv;charset=utf-8,Product ID,Product Name,Price,Stock,Category ID,Category Name\n";
+        //parse data into an array, add it to the csvContent in the correct format
+        let csvData = data.map(obj => Object.values(obj));
+        csvData.forEach(function(rowArray) {
           category_name = rowArray.pop().category_name;
-          console.log(category_name)
-          console.log(rowArray)
           rowArray.push(category_name);
-          console.log(rowArray)
           let row = rowArray.join(",");
           csvContent += row + "\r\n";
-      });
+        });
 
-      console.log(csvContent);
-      //takes the CSV content, encodes the URI with the data, and then file is opened (to download)
-      var encodedUri = encodeURI(csvContent);
-      window.open(encodedUri);
-
-
+        console.log(csvContent);
+        //takes the CSV content, encodes the URI with the data, and then file is opened (to download)
+        var encodedUri = encodeURI(csvContent);
+        window.open(encodedUri);
       })
     }
   })
-
 };
 
+//event listener  - when user clicks button, exportProductData function is called
 document.querySelector('.exportCSV').addEventListener('click', exportProductData);
