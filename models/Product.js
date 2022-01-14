@@ -49,7 +49,7 @@ Product.init(
       //foreign key to reference category
       references: {
         model: 'category',
-        key: 'category_id'
+        key: 'id'
       }
     },
   },
