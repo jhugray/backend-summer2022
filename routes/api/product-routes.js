@@ -8,7 +8,9 @@ router.get('/', (req, res) => {
     //include product's associated cateogry
     include: [
       {
-        model: Category
+        model: Category,
+        //returns only the category name instead of all the category info
+        attributes: ['category_name']
       }
     ]
   })
@@ -30,7 +32,8 @@ router.get('/:id', (req, res) => {
     },
     include: [  //associated Category
       {
-        model: Category
+        model: Category,
+        attributes: ['category_name']
       }
     ]
   })
