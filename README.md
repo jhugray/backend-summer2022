@@ -28,7 +28,7 @@ Imagine you have a passion for pottery, and want to share your creations with th
 
 ## Application
 
-A demo of this application has been deployed at: [https://shopify-be-intern-challenge.herokuapp.com](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge")
+This application has been deployed at: [https://shopify-be-intern-challenge.herokuapp.com](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge")
 
 ![image](https://user-images.githubusercontent.com/59127869/149660897-b97ec1ac-c247-4b14-b005-bd54638bf074.png)
 
