@@ -46,7 +46,7 @@ All of the API CRUD calls have been entered into ReqBin's online API tester for 
 * [Get a category by ID (Read)](https://reqbin.com/khrcgzgn)
 * [Update/Put a category by ID (Update)](https://reqbin.com/nxmmilu5)
 * [Add/Post a category (Read)](https://reqbin.com/ncb9x4of)
-* [Delete a category by ID (Read)](https://reqbin.com/zjnermvr)
+* [Delete a category by ID (Delete)](https://reqbin.com/zjnermvr)
 
 
 ![4DEBE6A2-E03E-4DF1-8A5D-24359EED0B76](https://user-images.githubusercontent.com/59127869/149660644-284c5343-ee3a-429a-b8e8-22b6892fc1e2.jpeg)
