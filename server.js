@@ -23,9 +23,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 // use files in public directory
 
-
-
 // sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on ${PORT}!`));
 });
+
+
+
