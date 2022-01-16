@@ -23,7 +23,7 @@ Imagine you have a passion for pottery, and want to share your creations with th
 * Javascript
 * Node.js
 * Express.js
-* MySQL12
+* MySQL2
 * Sequelize
 
 ## Application
@@ -31,12 +31,6 @@ Imagine you have a passion for pottery, and want to share your creations with th
 A demo of this application has been deployed at: [https://shopify-be-intern-challenge.herokuapp.com](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge")
 
 ![image](https://user-images.githubusercontent.com/59127869/149660897-b97ec1ac-c247-4b14-b005-bd54638bf074.png)
-
-
-INSERT DEPLOYED URL
-
-These images show examples of some of the CRUD operations using Insomnia, an API testing tool.
-INSERT SCREEN SHOTS ?and screencastify
 
 ## Installation
 
