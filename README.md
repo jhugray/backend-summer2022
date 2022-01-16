@@ -8,7 +8,7 @@
   * [Description](#description)
   * [Technologies](#technologies)
   * [Application](#application)
-  * [Installation](#Installation)
+  * [Installation](#installation)
   * [Contribution](#contribution)
   * [Questions](#questions)
 
@@ -16,7 +16,7 @@
 
 This is my application challenge for Shopify's Summer 2022 Backend internship.
 
-Imagine you have a passion for pottery, and want to share your creations with the world. This application can help make those dreams a reality by providing a simple way to manage your inventory. You can list your creations (products) and sort them into specific categories to help your customers have a nice shopping experience. View the products & categories, manage stock, update product & categories, delete products or categories, and add new products or categories names using the CRUD routes. You can even download a CSV document containing all your products at the touch of a button!
+Imagine you have a passion for pottery, and want to share your creations with the world. This application can help make those dreams a reality by providing a simple way to manage your inventory. You can list your creations (products) and sort them into specific categories to help your customers have a nice shopping experience. View, update, add, and delete products and categories using the CRUD routes. You can even download a CSV document containing all your products at the touch of a button!
 
 ## Technologies
 
@@ -28,7 +28,10 @@ Imagine you have a passion for pottery, and want to share your creations with th
 
 ## Application
 
-A demo of this application has been deployed at: [INSERT LINK](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge")
+A demo of this application has been deployed at: [https://shopify-be-intern-challenge.herokuapp.com](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge")
+
+![image](https://user-images.githubusercontent.com/59127869/149660897-b97ec1ac-c247-4b14-b005-bd54638bf074.png)
+
 
 INSERT DEPLOYED URL
 
@@ -47,12 +50,12 @@ All of the API CRUD calls have been entered into ReqBin's online API tester for 
 * [Delete a product by ID (Delete)](https://reqbin.com/bwqedmta)
 * [Get all categories (Read)](https://reqbin.com/qo9hpowq)
 * [Get a category by ID (Read)](https://reqbin.com/khrcgzgn)
-
-
 * [Update/Put a category by ID (Read)](https://reqbin.com/nxmmilu5)
 * [Add/Post a category (Read)](https://reqbin.com/ncb9x4of)
 * [Delete a category by ID (Read)](https://reqbin.com/zjnermvr)
 
+
+![4DEBE6A2-E03E-4DF1-8A5D-24359EED0B76](https://user-images.githubusercontent.com/59127869/149660644-284c5343-ee3a-429a-b8e8-22b6892fc1e2.jpeg)
 
 You can also interact with the application locally. 
 
