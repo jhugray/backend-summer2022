@@ -67,12 +67,13 @@ router.put('/:id', (req, res) => {
     }
   })
   .then(dbCategoryData => {
-    //if no category with that id, error message returned
+    // if no category with that id, or data is unchanged, error message returned
     if (!dbCategoryData[0]) {
-      res.status(404).json({message: 'No category found with that ID'});
+      res.status(404).json({message: 'Nothing to update.'});
       return;
     }
     res.json(dbCategoryData);
+
   })
   .catch(err => {
     console.log(err);

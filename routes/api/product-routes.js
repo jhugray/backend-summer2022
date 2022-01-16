@@ -38,9 +38,9 @@ router.get('/:id', (req, res) => {
     ]
   })
   .then(dbProductData => {
-    //if no product with that id, error message returned
+    //if no product with that id, or data is not changed,  error message returned
     if (!dbProductData) {
-      res.status(404).json({ message:'No product found with that ID' })
+      res.status(404).json({ message:'Nothing to update' })
       return;
     }
     res.json(dbProductData);
