@@ -1,9 +1,6 @@
 const router = require('express').Router();
 const { Product, Category } = require('../../models');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const createCsvStringifier = require('csv-writer').createObjectCsvStringifier;
-
-
 
 // GET /api/products endpoint
 router.get('/', (req, res) => {
@@ -28,24 +25,19 @@ router.get('/', (req, res) => {
   });
 });
 
-//CSV EXPORT
-
-// GET /api/products endpoint
+//CSV EXPORT endpoint for all products
 router.get('/products.csv', (req, res) => {
-  //runs the findAll method on the Product model
   Product.findAll({
-    //include product's associated cateogry
     include: [
       {
         model: Category,
-        //returns only the category name instead of all the category info
         attributes: ['category_name']
       }
     ]
   })
-  //returns data in JSON format
   .then(dbProductData => {
    const csvStringifier = createCsvStringifier({
+     //define the headers for the CSV
       header: [
         {id: 'id', title: 'Product ID'},
         {id: 'product_name', title: 'Product Name'},
@@ -55,23 +47,17 @@ router.get('/products.csv', (req, res) => {
         {id: 'category_name', title: 'Category Name'}
       ]
     });
-    console.log(dbProductData)
-    const csvData = dbProductData.map(obj => { obj.category_name = obj.category.category_name; return obj})
-    console.log("---------------")
-    console.log(csvData)
-    console.log("**********")
-
+    // parse the dbProductData from the GET request incl the category array
+    const csvData = dbProductData.map(obj => {
+      obj.category_name = obj.category.category_name; 
+      return obj
+    });
+    //combine header and product data into one string, in comma seperated values
     const productCSV = csvStringifier.getHeaderString() + csvStringifier.stringifyRecords(csvData);
-    console.log(productCSV);
+    //response file set up
     res.type("text/csv")
     res.setHeader('Content-Disposition', 'attachment; filename=Products.csv');
     res.send(productCSV);
-    // console.log();
-
-
-  //   csvWriter
-  // .writeRecords(csvData)
-  // .then(()=> console.log('The CSV file was written successfully'));
   })
   // error handling
   .catch(err => {
