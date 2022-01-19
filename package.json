@@ -4,6 +4,7 @@
   "description": "Shopify's intern program back end challenge",
   "main": "server.js",
   "dependencies": {
+    "csv-writer": "^1.6.0",
     "dotenv": "^8.6.0",
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
