@@ -1,0 +1,11 @@
+Product ID,Product Name,Price,Stock,Category ID,Category Name
+1,Soup Bowl,24,14,1,Bowls
+2,Salad Bowl,18,20,1,Bowls
+3,Coffee Mug,18,12,2,Mugs
+4,Handle-free Mug,14,20,2,Mugs
+5,Serving Platter,30,22,3,Plates
+6,Set of 4 Small Plates,40,8,3,Plates
+7,Ring Holder,13,8,4,Decorative
+8,Large Vase,30,10,4,Decorative
+9,Small Vase,19,8,4,Decorative
+10,Female Figurine,21,2,4,Decorative
