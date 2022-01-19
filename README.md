@@ -28,11 +28,11 @@ Imagine you have a passion for pottery, and want to share your creations with th
 
 ## Application
 
-This application has been deployed at: [https://shopify-be-intern-challenge.herokuapp.com](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge")
+This application has been deployed at: [https://shopify-be-intern-challenge.herokuapp.com](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge").
 
 ![image](https://user-images.githubusercontent.com/59127869/149660897-b97ec1ac-c247-4b14-b005-bd54638bf074.png)
 
-All of the API CRUD calls have been entered into ReqBin's online API tester for convenience:
+All of the API CRUD calls have been entered into [ReqBin's online API tester](https://reqbin.com/) for convenience:
 * [Get all products (Read)](https://reqbin.com/otvbpjk8)
 * [Get a product by ID (Read)](https://reqbin.com/lhwlfiy8)
 * [Update/Put a product by ID (Update)](https://reqbin.com/vdebo6dy)
@@ -40,9 +40,9 @@ All of the API CRUD calls have been entered into ReqBin's online API tester for 
 * [Delete a product by ID (Delete)](https://reqbin.com/bwqedmta)
 * [Get all categories (Read)](https://reqbin.com/qo9hpowq)
 * [Get a category by ID (Read)](https://reqbin.com/khrcgzgn)
-* [Update/Put a category by ID (Update)](https://reqbin.com/nxmmilu5)
-* [Add/Post a category (Read)](https://reqbin.com/ncb9x4of)
-* [Delete a category by ID (Delete)](https://reqbin.com/zjnermvr)
+* [Update/Put a category by ID (Update)](https://reqbin.com/l27hzllo)
+* [Add/Post a category (Read)](https://reqbin.com/clxpeptc)
+* [Delete a category by ID (Delete)](https://reqbin.com/6jood1bi)
 
 ![4DEBE6A2-E03E-4DF1-8A5D-24359EED0B76](https://user-images.githubusercontent.com/59127869/149660644-284c5343-ee3a-429a-b8e8-22b6892fc1e2.jpeg)
 
