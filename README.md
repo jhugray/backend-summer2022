@@ -32,10 +32,6 @@ This application has been deployed at: [https://shopify-be-intern-challenge.hero
 
 ![image](https://user-images.githubusercontent.com/59127869/149660897-b97ec1ac-c247-4b14-b005-bd54638bf074.png)
 
-## Installation
-
-To demo the application, you can use [the deployed heroku version](https://shopify-be-intern-challenge.herokuapp.com/ "Jess Ugray's backend challenge").
-
 All of the API CRUD calls have been entered into ReqBin's online API tester for convenience:
 * [Get all products (Read)](https://reqbin.com/otvbpjk8)
 * [Get a product by ID (Read)](https://reqbin.com/lhwlfiy8)
@@ -48,16 +44,19 @@ All of the API CRUD calls have been entered into ReqBin's online API tester for 
 * [Add/Post a category (Read)](https://reqbin.com/ncb9x4of)
 * [Delete a category by ID (Delete)](https://reqbin.com/zjnermvr)
 
-
 ![4DEBE6A2-E03E-4DF1-8A5D-24359EED0B76](https://user-images.githubusercontent.com/59127869/149660644-284c5343-ee3a-429a-b8e8-22b6892fc1e2.jpeg)
 
-You can also interact with the application locally. 
+## Installation
+
+To test the API calls you can use the links above. If you wish to test or use the code locally, please follow these steps:
 
 1. Download or clone the repo. 
 
-2. Open a terminal (or command line) at the root folder, and run `npm install` in the command line to install the dependencies. 
+2. You will need Node.js and npm. If you do not have these, please refer to [the npm docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-3. Create a file at the root directory called `.env` and store the following variables:
+3. Open a terminal (or command line) at the root folder, and run `npm install` in the command line to install the dependencies. 
+
+4. Create a file at the root directory called `.env` and store the following variables:
 ```
 DB_NAME='store_backend_db'
 DB_USER='<your msql username>'
@@ -65,13 +64,13 @@ DB_PW='<your mysql password'
 ```
 If you do not have a mysql log in or need assistance, please refer to [the mySQL docs](https://dev.mysql.com/doc/refman/8.0/en/access-control.html).
 
-4. If you wish to seed the database using the provided seed data, run  `npm seed` in the command line. 
+5. If you wish to seed the database using the provided seed data, run  `npm seed` in the command line. 
 
-5. To start the server, run `npm start`.
+6. To start the server, run `npm start`.
 
-6. The application will be available at [http://localhost:3001/](http://localhost:3001/).
+7. The application will be available at [http://localhost:3001/](http://localhost:3001/).
 
-7. You may then use the application! You can make API calls from the command line, or using an API tester of your choice, such as [Insomnia](https://insomnia.rest/) or [Postman](https://www.postman.com/). 
+8. You may then use the application! You can make API calls from the command line, or using an API tester of your choice, such as [Insomnia](https://insomnia.rest/) or [Postman](https://www.postman.com/). 
 
 ## Contribution
 
