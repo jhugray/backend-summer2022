@@ -1,9 +1,11 @@
 const router = require('express').Router();
-//imports API routes
 const apiRoutes = require('./api');
+const exportRoutes = require('./export-routes');
 
-// /api endpoint uses apiRoutes (./api)
+
 router.use('/api', apiRoutes);
+router.use('/export', exportRoutes);
+
 
 // 404 error if server cannot return page
 router.use((req, res) => {

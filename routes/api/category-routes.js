@@ -3,17 +3,14 @@ const { Category, Product } = require('../../models');
 
 // GET /api/categories
 router.get('/', (req, res) => {
-  //runs the findAll method on the Category model
   Category.findAll({
-    include: [  // its associated Products
+    include: [  
       {
         model: Product
       }
     ]
   })
-  //returns data in JSON format
   .then(dbCategoryData => res.json(dbCategoryData))
-  //error handling
   .catch(err => {
     console.log(err);
     // internal server error
@@ -27,14 +24,14 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    include: [//its associated Products
+    include: [
       {
         model: Product
       }
     ]
     })
   .then(dbCategoryData => {
-    //if no category with that id, error message returned
+    //if no category with that id, error not found message 
     if (!dbCategoryData) {
       res.status(404).json({ message:'No category found with that ID' })
       return;
@@ -43,6 +40,7 @@ router.get('/:id', (req, res) => {
   })
   .catch(err => {
     console.log(err);
+    // internal server error
     res.status(500).json(err)
   });
 });
@@ -55,6 +53,7 @@ router.post('/', (req, res) => {
   .then((dbCategoryData) => { res.json(dbCategoryData)})
   .catch((err) => {
     console.log(err);
+    //internal server error
     res.status(500).json(err);
   });
 });
@@ -67,16 +66,16 @@ router.put('/:id', (req, res) => {
     }
   })
   .then(dbCategoryData => {
-    // if no category with that id, or data is unchanged, error message returned
+    // if no category with that id, or data is unchanged, error message
     if (!dbCategoryData[0]) {
       res.status(404).json({message: 'Nothing to update.'});
       return;
     }
     res.json(dbCategoryData);
-
   })
   .catch(err => {
     console.log(err);
+    //internal server error
     res.status(500).json(err);
   });
 });
@@ -90,6 +89,7 @@ router.delete('/:id', (req, res) => {
   })
   .then(dbCategoryData => {
     if (!dbCategoryData) {
+      // if no category with that ID, error not found message 
       res.status(404).json({message: 'No category found with that ID'});
       return;
     }
@@ -97,6 +97,7 @@ router.delete('/:id', (req, res) => {
   })
   .catch(err => {
     console.log(err);
+    //internal server error
     res.status(500).json(err);
   });
 });
